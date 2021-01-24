@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Heading
-- type: heading
-  label: Content
 - type: document
   path: content/_index.md
   label: Home
@@ -19,6 +15,8 @@ sections:
   templates:
   - post
 - type: heading
+  label: Content
+- type: heading
   label: Data
 - type: directory
   path: content/authors
@@ -27,12 +25,6 @@ sections:
   match: "**/_index.md"
   templates:
   - author
-- type: directory
-  path: config/_default
-  label: Config
-  create: all
-  match: "**/*"
-  new_doc_ext: yaml
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
